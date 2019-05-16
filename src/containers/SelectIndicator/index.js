@@ -28,7 +28,7 @@ class SelectIndicator extends Component {
     if (contentAreaId) {
       try {
         const response = await axios(
-          `https://ephtracking.cdc.gov/apigateway/api/v1/indicators/${contentAreaId}/0/0`
+          `https://ephtracking.cdc.gov/apigateway/api/v1/indicators/${contentAreaId}`
         );
         this.setState({
           options: response.data

@@ -28,7 +28,7 @@ class SelectMeasure extends Component {
     if (indicatorId) {
       try {
         const response = await axios(
-          `https://ephtracking.cdc.gov/apigateway/api/v1/measures/${indicatorId}/0/0`
+          `https://ephtracking.cdc.gov/apigateway/api/v1/measures/${indicatorId}`
         );
         this.setState({
           options: response.data
